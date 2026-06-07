@@ -1,0 +1,60 @@
+=== Match for CAT-0008 ===
+3837:             cid === "CAT-0008" || cid === "CAT_013" || c.name.includes("\u8001\u55b5") ||
+
+=== Match for 0008 ===
+3837:             cid === "CAT-0008" || cid === "CAT_013" || c.name.includes("\u8001\u55b5") ||
+
+=== Match for 0021 ===
+1617:   logBattle(`\u9ed1\u55b5\u7279\u6b8a\u6548\u679c\uff1a\u7834\u58bad\u5c0d\u624b\u0020${unitName(targetUnit)}\u0021`); // 黑喵特殊效果：破壞對手 [單位]！
+3554:         logBattle(`\u5c0d\u624b\u7279\u6b8a\u6548\u679c\uff1a\u7834\u58bad\u6211\u65b9\u0020${unitName(unit)}\u0021`); // 對手特殊效果：破壞我方 [單位]！
+
+=== Match for CAT-0041 ===
+1177:           return u && u.card && (u.card.id === "CAT_005" || u.card.id === "R-CAT-0041" || u.card.name.includes("公關姐姐喵"));
+
+=== Match for 0041 ===
+1177:           return u && u.card && (u.card.id === "CAT_005" || u.card.id === "R-CAT-0041" || u.card.name.includes("公關姐姐喵"));
+
+=== Match for CAT-0044 ===
+3768:     if ((card.id === "CAT_003" || card.id === "R-CAT-0044" || card.name.includes("\u6bad\u5c4d\u55b5")) && !executedEffects.has("zombie_meow")) {
+
+=== Match for 0044 ===
+3768:     if ((card.id === "CAT_003" || card.id === "R-CAT-0044" || card.name.includes("\u6bad\u5c4d\u55b5")) && !executedEffects.has("zombie_meow")) {
+
+=== Match for CAT-0011 ===
+3757:     if ((card.id === "CAT_0011" || card.id === "R-CAT-0011" || card.id === "CAT_012" || card.name.includes("\u9ed1\u55b5")) && !executedEffects.has("black_meow")) {
+
+=== Match for CAT_0011 ===
+3757:     if ((card.id === "CAT_0011" || card.id === "R-CAT-0011" || card.id === "CAT_012" || card.name.includes("\u9ed1\u55b5")) && !executedEffects.has("black_meow")) {
+
+=== Match for 0011 ===
+1998:   // 武士繪 (R-VLG-0011) 戰鬥成功回收效果
+3757:     if ((card.id === "CAT_0011" || card.id === "R-CAT-0011" || card.id === "CAT_012" || card.name.includes("\u9ed1\u55b5")) && !executedEffects.has("black_meow")) {
+
+=== Match for CAT_0023 ===
+3778:     if ((card.id === "CAT_0023" || card.name.includes("\u91ab\u7642\u55b5")) && !executedEffects.has("medical_meow")) {
+
+=== Match for 0023 ===
+3778:     if ((card.id === "CAT_0023" || card.name.includes("\u91ab\u7642\u55b5")) && !executedEffects.has("medical_meow")) {
+
+=== Match for CAT-0032 ===
+3838:             cid === "CAT-0032" || cid === "SR-CAT-0032" || c.name.includes("\u6b21\u5143\u7a81\u64ca\u55b5") ||
+
+=== Match for 0032 ===
+2441:         setStatus(`\u7b2c ${turn} \u56de\u5408\u958b\u59cb\uff0c\u5df2\u81ea\u52d5\u62bd\u0032\u5f35\u3002\u524d\u4e00\u56de\u5408\u5c0d\u624b\u6709\u9032\u653b\u5ba3\u8a00\uff0c\u81ea\u52d5\u9032\u5165\u300c\u9632\u5b88\u968e\u6bb5\u300d\uff01`);
+2450:         setStatus(`\u7b2c ${turn} \u56de\u5408\u958b\u59cb\uff0c\u5df2\u81ea\u52d5\u62bd\u0032\u5f35\u3002`);
+3838:             cid === "CAT-0032" || cid === "SR-CAT-0032" || c.name.includes("\u6b21\u5143\u7a81\u64ca\u55b5") ||
+
+=== Match for CAT-0052 ===
+3811:         if (u && (u.card?.id === "CAT_0052" || u.card?.id === "R-CAT-0052" || u.card?.name.includes("\u51f1\u7279\u7433"))) {
+3818:     if ((card.id === "CAT_0052" || card.id === "R-CAT-0052" || card.name.includes("\u51f1\u7279\u7433") || hasCaitlynOnField) && !executedEffects.has("caitlyn")) {
+3843:         if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("\u51f1\u7279\u7433")) && window.XLW_turnSneakCount >= 2) {
+
+=== Match for CAT_0052 ===
+3811:         if (u && (u.card?.id === "CAT_0052" || u.card?.id === "R-CAT-0052" || u.card?.name.includes("\u51f1\u7279\u7433"))) {
+3818:     if ((card.id === "CAT_0052" || card.id === "R-CAT-0052" || card.name.includes("\u51f1\u7279\u7433") || hasCaitlynOnField) && !executedEffects.has("caitlyn")) {
+3843:         if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("\u51f1\u7279\u7433")) && window.XLW_turnSneakCount >= 2) {
+
+=== Match for 0052 ===
+3811:         if (u && (u.card?.id === "CAT_0052" || u.card?.id === "R-CAT-0052" || u.card?.name.includes("\u51f1\u7279\u7433"))) {
+3818:     if ((card.id === "CAT_0052" || card.id === "R-CAT-0052" || card.name.includes("\u51f1\u7279\u7433") || hasCaitlynOnField) && !executedEffects.has("caitlyn")) {
+3843:         if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("\u51f1\u7279\u7433")) && window.XLW_turnSneakCount >= 2) {

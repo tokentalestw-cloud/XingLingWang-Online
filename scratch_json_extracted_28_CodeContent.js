@@ -1,0 +1,1 @@
+"with open(r'c:\\Users\\a2132\\Documents\\星靈王\\XingLingWang_v7_fixed\\static\\game_v8.js', 'r', encoding='utf-8') as f:\n    content = f.read()\n\nlines = content.splitlines()\nfor i, line in enumerate(lines, 1):\n    if \"async function triggerSneakAttackSuccessEffects\" in line:\n        print(f\"Defined at line: {i}\")\n"

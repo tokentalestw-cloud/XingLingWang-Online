@@ -1,0 +1,55 @@
+1871:     attacker.target = null;
+1872:     return `${unitName(defender)} 是阻擋/盾牌單位，本次進攻被成功阻擋`;
+1873:   }
+1874: 
+1875:   // 3. 讀取雙方遠程、劇毒、偷襲特性
+1876:   const attackerCard = attacker.card || attacker;
+1877:   const defenderCard = defender.card || defender;
+1878: 
+1879:   const attackerHasRanged = (attackerCard.keywords && attackerCard.keywords.includes("\u9060\u7a0b")) ||
+1880:                              (attackerCard.effect_text && attackerCard.effect_text.includes("\u9060\u7a0b"));
+1881:   const attackerHasPoison = (attackerCard.keywords && attackerCard.keywords.includes("\u5287\u6bd2")) ||
+1882:                              (attackerCard.effect_text && attackerCard.effect_text.includes("\u5287\u6bd2"));
+1883:   const attackerHasSneak = (attackerCard.keywords && attackerCard.keywords.includes("\u5077\u8972")) ||
+1884:                             (attackerCard.effect_text && attackerCard.effect_text.includes("\u5077\u8972"));
+1885: 
+1886:   const defenderHasPoison = (defenderCard.keywords && defenderCard.keywords.includes("\u5287\u6bd2")) ||
+1887:                              (defenderCard.effect_text && defenderCard.effect_text.includes("\u5287\u6bd2"));
+1888: 
+1889:   // 4. 計算雙方是否應當被擊破 (引入 Ranged 免疫反擊與 Poisonous 必殺邏輯)
+1890:   let attackerShouldDie = false;
+1891:   let defenderShouldDie = false;
+1892: 
+1893:   // 基礎戰鬥數值對決 (相同攻擊力時攻擊方獲勝，防守方被破壞)
+1894:   if (atkPower >= defPower) {
+1895:     defenderShouldDie = true;
+1896:     attackerShouldDie = false;
+1897:   } else {
+1898:     attackerShouldDie = true;
+1899:     defenderShouldDie = false;
+1900:   }
+1901: 
+1902:   // 遠程 (Ranged) 效果應用：進攻時不會因為戰鬥失敗而被破壞（免除反擊傷害）
+1903:   if (attackerHasRanged) {
+1904:     attackerShouldDie = false;
+1905:   }
+1906: 
+1907:   // 劇毒 (Poisonous) 效果應用：與此單位戰鬥的單位將直接被破壞（對遠程單位的進攻無效）
+1908:   if (attackerHasPoison) {
+1909:     defenderShouldDie = true; // 劇毒進攻必殺
+1910:   }
+1911:   if (defenderHasPoison) {
+1912:     if (!attackerHasRanged) {
+1913:       attackerShouldDie = true; // 劇毒防守觸殺 (遠程進攻免疫此效果)
+1914:     }
+1915:   }
+1916: 
+1917:   // 5. 執行擊破與死鬥送墓
+1918:   let piercingMsg = "";
+1919:   const destPromise = [];
+1920:   if (attackerShouldDie) {
+1921:     destPromise.push(destroyUnit(attZone, attIdx, defenderOwner === "player" ? "enemy" : "player"));
+1922:   }
+1923:   if (defenderShouldDie) {
+1924:     destPromise.push(destroyUnit(defZone, defIdx, defenderOwner));
+1925: 

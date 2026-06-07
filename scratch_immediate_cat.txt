@@ -1,0 +1,50 @@
+1261:         setTimeout(async () => {
+1262:           while (hand.length > 0) {
+1263:             const choices = hand.map((c, i) => ({ text: `棄置: ${c.name}`, value: i }));
+1264:             choices.push({ text: "結束棄牌", value: -1 });
+1265:             const chosen = await showXLWChoiceModal("八岐大蛇 棄牌效果", "請選擇要棄置的手牌（點「結束棄牌」完成）：", choices);
+1266:             if (chosen === null || chosen === undefined || chosen === -1) {
+1267:               break;
+1268:             }
+1269:             const discarded = hand.splice(chosen, 1)[0];
+1270:             graveyard.push(discarded);
+1271:             logBattle(`八岐大蛇 效果：棄置 ${discarded.name} 至墓地。`);
+1272:             render();
+1273:           }
+1274:         }, 500);
+1275:       }
+1276:     }
+1277: 
+1278:     // 喵喵賊立即/聯動自召喚效果
+1279:     const isImmediateCat = (card.keywords?.includes("立即") || card.effect_text?.includes("立即") || card.name?.includes("立即") || card.name?.includes("喵女")) &&
+1280:                            (card.faction === "喵喵賊" || card.id?.includes("CAT") || card.name.includes("喵"));
+1281:     if (isImmediateCat && zone.startsWith("player_")) {
+1282:       const validImmediateSummons = hand.filter(c => {
+1283:         return c && (c.type === "unit" || c.type === "怪獸" || c.type === "怪獸") &&
+1284:                (c.keywords?.includes("偷襲") || c.effect_text?.includes("偷襲")) &&
+1285:                Number(c.tribute || 0) <= 0;
+1286:       });
+1287: 
+1288:       if (validImmediateSummons.length > 0) {
+1289:         logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+1290:         setTimeout(async () => {
+1291:           const userConfirmed = await showXLWConfirm(
+1292:             "【立即連動】喵女/立即效果發動！",
+1293:             "是否立刻從手牌特殊召喚一張免祭品且具「偷襲」特性的單位？（不佔用常規或戰術召喚額度）"
+1294:           );
+1295:           if (userConfirmed) {
+1296:             const extraCard = validImmediateSummons[0];
+1297:             window.XLW_bypassNormalSummonLimit = true;
+1298:             selectedHandForSummon = hand.indexOf(extraCard);
+1299:             setStatus("【立即連動】請點選我方一個空格進行特殊召喚！");
+1300:             render();
+1301:           }
+1302:         }, 300);
+1303:       }
+1304:     }
+1305:     
+1306:     if (isTributeSummon) {
+1307:       playTributeSummonAnimation(zone, idx);
+1308:     }
+1309:   }
+1310: 

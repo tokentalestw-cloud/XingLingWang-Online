@@ -1,0 +1,32 @@
+104: // ===== 喵喵賊偷襲系統變數 =====
+105: window.XLW_turnSneakCount = 0;
+501:     window.XLW_turnSneakCount = 0;
+1284:                (c.keywords?.includes("偷襲") || c.effect_text?.includes("偷襲")) &&
+1289:         logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+1293:             "是否立刻從手牌特殊召喚一張免祭品且具「偷襲」特性的單位？（不佔用常規或戰術召喚額度）"
+1849: // 實行戰鬥判定 (防守方死亡送入對應墓地，包含卡牌碎裂火花動畫，全面支持 遠程、劇毒、偷襲、阻擋、貫穿 結算)
+1875:   // 3. 讀取雙方遠程、劇毒、偷襲特性
+1883:   const attackerHasSneak = (attackerCard.keywords && attackerCard.keywords.includes("\u5077\u8972")) ||
+1943:   // 6. 偷襲 (Sneak Attack) 效果應用：成功進攻並存活後，將此卡收回手牌
+1944:   let sneakMsg = "";
+1945:   if (attackerHasSneak && !attackerShouldDie && defenderShouldDie) {
+1951:         sneakMsg = `，且對手觸發「偷襲」成功收回其手牌`;
+1956:         "🥷 偵測到【偷襲】契機！",
+1957:         `我方單位 <b>${unitName(attacker)}</b> 進攻成功！<br>是否啟動「偷襲」將其收回手牌並觸發偷襲成功連動效果？`,
+1958:         "確認回手 (啟動偷襲)",
+1965:         sneakMsg = `，且觸發「偷襲」成功收回我方手牌`;
+1967:         // 核心：觸發「偷襲成功」的一系列效果！
+1968:         await triggerSneakAttackSuccessEffects(attacker.card);
+1974:         sneakMsg = `，我方選擇放棄「偷襲」回手，使該單位留在場上處於疲勞狀態`;
+1993:     combatMsg = `${unitName(attacker)} 成功擊破了 ${unitName(defender)}${piercingMsg}${sneakMsg}`;
+1995:     combatMsg = `${unitName(attacker)} 進攻了 ${unitName(defender)}，雙方皆安然無恙${sneakMsg}`;
+2419:     window.XLW_turnSneakCount = 0;
+3598:       window.XLW_turnSneakCount = 0;
+3646:         logBattle(`🥷 變裝喵 效果：對手變裝喵偷襲成功，我方被迫隨機捨棄了手牌中的 ${discarded.name}！`);
+3744: async function triggerSneakAttackSuccessEffects(card) {
+3748:   window.XLW_turnSneakCount = (window.XLW_turnSneakCount || 0) + 1;
+3749:   logBattle(`\ud83e\udd77 \u5077\u8972\u6210\u529f\uff01\u622c\u56de\u5408\u7d2f\u8a08\u5077\u8972\u6210\u529f\u6b21\u6578\uff1a${window.XLW_turnSneakCount} \u6b21\u3002`);
+3819:       const pts = window.XLW_turnSneakCount || 1;
+3843:         if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("\u51f1\u7279\u7433")) && window.XLW_turnSneakCount >= 2) {
+3955:       const pts = window.XLW_turnSneakCount || 1;
+4174: // ===== 23. 喵喵賊 偷襲效果與連動確認彈窗引擎 =====

@@ -1,0 +1,14 @@
+ID: CAT_0046 | Name: 負能量喵 | Extra Limit: 1
+ID: CAT_0047 | Name: 二連爪擊喵 | Extra Limit: 1
+ID: CAT_0048 | Name: 經理喵 | Extra Limit: 1
+ID: NEU-0026 | Name: 細胞旅人 | Extra Limit: 0
+ID: NEU-0030 | Name: 馴羊使者 牡羊座 | Extra Limit: 1
+ID: NEU-0032 | Name: 居酒屋老闆娘 | Extra Limit: 2
+ID: R-NMG-0031 | Name: 魔抗鐵拳 | Extra Limit: 1
+ID: R-VLG-0050 | Name: 紅眼小僧 | Extra Limit: 1
+ID: R-VLG-0051 | Name: 伽椰貞美子 | Extra Limit: 1
+ID: SR-VLG-0049 | Name: 憤怒的般若 | Extra Limit: 1
+ID: SSR-VLG-0051 | Name: 伽椰貞美子 | Extra Limit: 1
+ID: SSSR-NMS-0032 | Name: 居酒屋老闆娘 | Extra Limit: 2
+ID: VLG_002 | Name: 雨傘妖怪 | Extra Limit: 2
+ID: VLG_012 | Name: 雪女 | Extra Limit: 1

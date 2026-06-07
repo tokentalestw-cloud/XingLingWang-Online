@@ -1,0 +1,46 @@
+=== Keyword: 老喵 ===
+Not found!
+
+=== Keyword: 騎士喵 ===
+Not found!
+
+=== Keyword: 幽靈喵 ===
+Not found!
+
+=== Keyword: 公關姐姐喵 ===
+1177:           return u && u.card && (u.card.id === "CAT_005" || u.card.id === "R-CAT-0041" || u.card.name.includes("公關姐姐喵"));
+1182:             logBattle(`✨ 公關姐姐喵 效果：我方進行額外召喚單位，我方額外獎勵 +1 分！`);
+1185:             logBattle(`✨ 公關姐姐喵 效果：對手進行額外召喚單位，對手額外獎勵 +1 分！`);
+
+=== Keyword: 殭屍喵 ===
+Not found!
+
+=== Keyword: 彈弓喵 ===
+Not found!
+
+=== Keyword: 漏食球 ===
+Not found!
+
+=== Keyword: 虎老大 ===
+Not found!
+
+=== Keyword: 黑喵 ===
+1617:   logBattle(`\u9ed1\u55b5\u7279\u6b8a\u6548\u679c\uff1a\u7834\u58bad\u5c0d\u624b\u0020${unitName(targetUnit)}\u0021`); // 黑喵特殊效果：破壞對手 [單位]！
+1636:   setStatus("\u9ed1\u55b5\u7834\u58bad\u6548\u679c\u5df2\u57f7\u884c\u3002"); // 黑喵破壞效果已執行。
+
+=== Keyword: 醫療喵 ===
+Not found!
+
+=== Keyword: 喵女 ===
+1279:     const isImmediateCat = (card.keywords?.includes("立即") || card.effect_text?.includes("立即") || card.name?.includes("立即") || card.name?.includes("喵女")) &&
+1289:         logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+1292:             "【立即連動】喵女/立即效果發動！",
+
+=== Keyword: 次元突擊喵 ===
+Not found!
+
+=== Keyword: 黑幫首喵 ===
+Not found!
+
+=== Keyword: 凱特琳 ===
+Not found!

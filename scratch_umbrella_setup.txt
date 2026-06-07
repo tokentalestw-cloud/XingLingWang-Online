@@ -1,0 +1,55 @@
+1026:     // 牆壁妖怪獻祭連召效果
+1027:     const wallIdx = hand.findIndex(c => c && c.name.includes("牆壁妖怪"));
+1028:     const hasEmptySlot = ["player_front", "player_back"].some(zone => field[zone].some(u => u === null));
+1029:     if (wallIdx >= 0 && hasEmptySlot) {
+1030:       setTimeout(async () => {
+1031:         const confirm = await showXLWConfirm("牆壁妖怪 效果發動", "偵測到場上有單位被獻祭，是否從手牌額外特殊召喚 牆壁妖怪？（不佔用常規召喚次數）");
+1032:         if (confirm) {
+1033:           window.XLW_bypassNormalSummonLimit = true;
+1034:           selectedHandForSummon = wallIdx;
+1035:           setStatus("【牆壁妖怪 召喚】請點選我方一個空格進行特殊召喚！");
+1036:           render();
+1037:           await new Promise(r => { window.XLW_summonPlacementResolve = r; });
+1038:         }
+1039:       }, 500);
+1040:     }
+1041: 
+1042:     // 雨傘妖怪自召效果
+1043:     const hasUmbrellaInGrave = graveyard.some(c => c && c.name.includes("雨傘妖怪"));
+1044:     if (hasUmbrellaInGrave && hasEmptySlot) {
+1045:       setTimeout(async () => {
+1046:         const confirm = await showXLWConfirm("雨傘妖怪 效果發動", "偵測到墓地中有雨傘妖怪且場上有單位被獻祭，是否將其自墓地特殊召喚？");
+1047:         if (confirm) {
+1048:           const graveIdx = graveyard.findIndex(c => c && c.name.includes("雨傘妖怪"));
+1049:           const card = graveyard[graveIdx];
+1050:           graveyard.splice(graveIdx, 1);
+1051:           window.XLW_bypassNormalSummonLimit = true;
+1052:           selectedHandForSummon = "GRAVEYARD_UMBRELLA";
+1053:           window.XLW_tempGraveCard = card;
+1054:           setStatus("【雨傘妖怪 復活】請點選我方一個空格進行特殊召喚！");
+1055:           render();
+1056:           await new Promise(r => { window.XLW_summonPlacementResolve = r; });
+1057:         }
+1058:       }, 800);
+1059:     }
+1060:   });
+1061: }
+1062: 
+1063: // 實行手牌召喚/小旅人召喚至格子上
+1064: async function performSummonToSlot(zone, idx) {
+1065:   logDebug(`【點選放置】目標格子: ${zone}:${idx + 1}`);
+1066:   // 獻祭召喚與位置放置之強大對象參考匹配與 Fallback 恢復機制
+1067:   if (tributeWaitingPosition && selectedTributeCard !== null) {
+1068:     const idxInHand = hand.indexOf(selectedTributeCard);
+1069:     if (idxInHand >= 0) {
+1070:       selectedHandForSummon = idxInHand;
+1071:       logDebug(`【對象匹配】實體匹配成功！手牌 Index: ${selectedHandForSummon}`);
+1072:     } else {
+1073:       const matchIdx = hand.findIndex(c => c && c.id === selectedTributeCard.id);
+1074:       if (matchIdx >= 0) {
+1075:         selectedHandForSummon = matchIdx;
+1076:         logDebug(`【對象匹配】ID 匹配成功！手牌 Index: ${selectedHandForSummon}`);
+1077:       } else {
+1078:         const foundIdx = hand.findIndex(c => c && Number(c.tribute || 0) > 0);
+1079:         if (foundIdx >= 0) {
+1080:           selectedHandForSummon = foundIdx;

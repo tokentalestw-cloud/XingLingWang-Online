@@ -1,0 +1,163 @@
+=== SEARCH FOR: 喵女 ===
+Line 941: // 立即 / 喵女效果發動：若單位寫有「立即」或名字為「喵女」，立刻打出一張免祭品偷襲單位（特殊召喚，不佔用召喚額度）
+Line 942: const isImmediate = card.keywords?.includes("立即") || card.effect_text?.includes("立即") || card.name?.includes("立即") || card.name?.includes("喵女");
+Line 951: logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+Line 953: showXLWConfirm(`【立即連動】喵女/立即效果發動！是否立刻從手牌特殊召喚一張免祭品且具「偷襲」特性的單位？（不佔用常規或戰術召喚額度）`, () => {
+
+=== SEARCH FOR: 立即 ===
+Line 941: // 立即 / 喵女效果發動：若單位寫有「立即」或名字為「喵女」，立刻打出一張免祭品偷襲單位（特殊召喚，不佔用召喚額度）
+Line 942: const isImmediate = card.keywords?.includes("立即") || card.effect_text?.includes("立即") || card.name?.includes("立即") || card.name?.includes("喵女");
+Line 951: logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+Line 953: showXLWConfirm(`【立即連動】喵女/立即效果發動！是否立刻從手牌特殊召喚一張免祭品且具「偷襲」特性的單位？（不佔用常規或戰術召喚額度）`, () => {
+Line 957: setStatus(`【立即連動】請點選我方一個空格進行特殊召喚！`);
+Line 1112: // 宣告成功：標記攻擊與目標，橫置卡牌，但【不立即結算】，等到對手回合防守判定
+Line 3328: `由於偷襲成功，是否要從手牌中額外打出 <b>${extraCard.name}</b>？<br>(此連動召喐不佔用常規每回合召喐額度，丟可立即進敫)`,
+
+=== SEARCH FOR: 偷襲 ===
+Line 104: // ===== 喵喵賊偷襲系統變數 =====
+Line 941: // 立即 / 喵女效果發動：若單位寫有「立即」或名字為「喵女」，立刻打出一張免祭品偷襲單位（特殊召喚，不佔用召喚額度）
+Line 946: (c.keywords?.includes("偷襲") || c.effect_text?.includes("偷襲")) &&
+Line 951: logDebug(`【立即連動】喵女/立即單位入場！偵測到手牌可連動偷襲單位：${validImmediateSummons.map(c => c.name).join(", ")}`);
+Line 953: showXLWConfirm(`【立即連動】喵女/立即效果發動！是否立刻從手牌特殊召喚一張免祭品且具「偷襲」特性的單位？（不佔用常規或戰術召喚額度）`, () => {
+Line 1497: // 實行戰鬥判定 (防守方死亡送入對應墓地，包含卡牌碎裂火花動畫，全面支持 遠程、劇毒、偷襲、阻擋、貫穿 結算)
+Line 1523: // 3. 讀取雙方遠程、劇毒、偷襲特性
+Line 1531: const attackerHasSneak = (attackerCard.keywords && attackerCard.keywords.includes("偷襲")) ||
+Line 1532: (attackerCard.effect_text && attackerCard.effect_text.includes("偷襲"));
+Line 1591: // 6. 偷襲 (Sneak Attack) 效果應用：成功進攻並存活後，將此卡收回手牌
+Line 1599: sneakMsg = `，且對手觸發「偷襲」成功收回其手牌`;
+Line 1604: "🥷 偵測到【偷襲】契機！",
+Line 1605: `我方單位 <b>${unitName(attacker)}</b> 進攻成功！<br>是否啟動「偷襲」將其收回手牌並觸發偷襲成功連動效果？`,
+Line 1606: "確認回手 (啟動偷襲)",
+Line 1613: sneakMsg = `，且觸發「偷襲」成功收回我方手牌`;
+Line 1615: // 核心：觸發「偷襲成功」的一系列效果！
+Line 1622: sneakMsg = `，我方選擇放棄「偷襲」回手，使該單位留在場上處於疲勞狀態`;
+Line 3008: logBattle(`🥷 變裝喵 效果：對手變裝喵偷襲成功，我方被迫隨機捨棄了手牌中的 ${discarded.name}！`);
+Line 3109: // 1. 遞增本回合偷襲成功次數
+Line 3111: logBattle(`🥷 偷襲成功！本回合累計偷襲成功次數：${window.XLW_turnSneakCount} 次。`);
+Line 3113: // 2. 觸發「此卡偷襲成功時」效果
+Line 3170: "🧟 殭屍喵 偷襲效果連動！",
+Line 3213: "🏥 醫療喵 偷襲效果連動！",
+Line 3288: logBattle(`👑 黑幫首喵 凱特琳 效果發動！本回合已累計偷襲 ${pts} 次，我方額外分敺 +${pts}★。`);
+Line 3303: // 凱特琳需要至少 2 次偷襲成功
+Line 3327: "🐈 偵測到手牌【偷襲連動】！",
+Line 3328: `由於偷襲成功，是否要從手牌中額外打出 <b>${extraCard.name}</b>？<br>(此連動召喐不佔用常規每回合召喐額度，丟可立即進敫)`,
+Line 3524: // ===== 23. 喵喵賊 偷襲效果與連動確認彈窗引擎 =====
+
+=== SEARCH FOR: 妖怪村莊 ===
+Line 8: * 5. 妖怪村莊自動化對手 AI
+Line 49: deckName: "妖怪村莊",
+Line 236: if (v.includes("妖怪")) return "妖怪村莊";
+Line 238: return ["喵喵賊", "妖怪村莊", "藝術品"].includes(v) ? v : "喵喵賊";
+Line 260: if (deckName === "妖怪村莊") {
+Line 261: // 卡片左下角的種族字樣為「妖怪村莊」，表示此卡屬於妖怪村莊牌組
+Line 262: return c.faction === "妖怪村莊" || c.race === "妖怪村莊" || String(c.id).startsWith("VLG_") || String(c.id).startsWith("VLG-");
+Line 331: // 妖怪村莊對手初始化
+Line 1709: const baseCards = strictSourceCards("妖怪村莊");
+Line 1730: setStatus("對手回合：妖怪村莊正在進行整備抽牌...");
+Line 2002: const oppDeck = window.XLW_ENEMY.deckName || "妖怪村莊";
+Line 2549: div.innerHTML = `<div class="enemy-info-title">對手狀態：妖怪村莊</div><div>對手牌庫：<span id="enemyDeckCountInfo">0</span></div><div>對手手牌：<span id="enemyHandCountInfo">0</span></div>`;
+
+=== SEARCH FOR: 對手狀態 ===
+Line 190: // 初始化對手狀態面板的數據計數器（提供高奢對決即時感）
+Line 2549: div.innerHTML = `<div class="enemy-info-title">對手狀態：妖怪村莊</div><div>對手牌庫：<span id="enemyDeckCountInfo">0</span></div><div>對手手牌：<span id="enemyHandCountInfo">0</span></div>`;
+
+=== SEARCH FOR: 戰線 ===
+Line 453: // ===== 5. 核心規則判斷 (前排優先、盾牌、空戰線) =====
+Line 575: // 同戰線是否有敵方前後排
+Line 580: // 同戰線前排是否為盾牌
+Line 591: if (!enemyLaneHasAny(lane)) return false; // 空戰線不可進攻
+Line 1066: else if (!enemyLaneHasAny(idx)) setStatus("同戰線敵方前後排皆空，不能進攻該戰線。");
+Line 1067: else if (enemyFrontIsShield(idx)) setStatus("敵方同戰線前排為盾牌單位，受其阻擋無法進攻。");
+Line 1072: setStatus(`已選攻擊者：${unitName(unit)}。請點選同戰線敵方目標宣告攻擊。`);
+Line 1090: // 星星戰線（同欄位）限制
+Line 1092: setStatus("只能指定相同星星戰線的目標！");
+Line 1102: setStatus("敵方同戰線前排仍有單位，必須優先攻擊前排！（除非是遠程單位）");
+Line 1118: logBattle(`我方進攻宣言：星星戰線${idx + 1}，${unitName(attacker)} 指向對手 ${unitName(defender)}`);
+Line 1165: logBattle(`我方進攻宣言(遠程:${hasRanged})：星星戰線${i + 1}，${unitName(playerAttacker)} 指向對手 ${unitName(targetDefender)}`);
+Line 1192: logBattle(`我方取消進攻宣言：星星戰線${idx + 1}，${unitName(unit)}`);
+Line 1224: setStatus("敵方同星星戰線前後排皆無單位，無法進行進攻。");
+Line 1238: logBattle(`我方進攻宣言：星星戰線${idx + 1}，${unitName(unit)} 指向對手`);
+Line 1294: logBattle("—— 我方防守階段開始 (依戰線 1 -> 5 自動結算) ——");
+Line 1295: setStatus("我方防守判定中，系統正在依序結算各星星戰線戰鬥...");
+Line 1309: setStatus(`防守判定：星星戰線 ${lane + 1} 對手無進攻。`);
+Line 1330: logBattle(`防守判定：星星戰線 ${lane + 1} 前方無我方單位，對手進攻單位已轉正。`);
+Line 1331: setStatus(`防守判定：星星戰線 ${lane + 1} 前方無我方單位，對手進攻單位已轉正。`);
+Line 1344: setStatus(`防守判定：星星戰線 ${lane + 1} 被盾牌阻擋。`);
+Line 1350: setStatus(`對決！星星戰線 ${lane + 1}：${unitName(attacker)} ⚔ ${unitName(defender)}`);
+Line 1356: setStatus(`戰線 ${lane + 1} 結果：${resultMsg}`);
+Line 1380: setStatus("對手防守判定中，系統正在依序結算我方各星星戰線進攻...");
+Line 1394: setStatus(`防守判定：星星戰線 ${lane + 1} 我方無進攻。`);
+Line 1415: logBattle(`防守判定：星星戰線 ${lane + 1} 前方無對手單位，我方進攻單位已轉正。`);
+Line 1416: setStatus(`防守判定：星星戰線 ${lane + 1} 前方無對手單位，我方進攻單位已轉正。`);
+Line 1429: setStatus(`防守判定：星星戰線 ${lane + 1} 被對手盾牌阻擋。`);
+Line 1435: setStatus(`對決！星星戰線 ${lane + 1}：我方 ${unitName(attacker)} ⚔ 對手 ${unitName(defender)}`);
+Line 1798: // 5. 對手進攻宣言階段 (只與對面同戰線有我方的非盾牌列進行宣告進攻，全面支持對手 AI 遠程進攻)
+Line 1827: if (!targetZone) continue; // 空戰線不能進攻
+Line 1835: logBattle(`對手進攻宣言(遠程:${hasRanged})：星星戰線${i + 1}，對手 ${unitName(enemyAttacker)} 指向我方 ${unitName(targetDefender)}`);
+Line 1839: logBattle(`—— 對手回合結束，已宣告 ${opponentAttackCount} 條星星戰線進攻。 ——`);
+Line 2046: case "進攻宣言": return "本回合已選擇進攻宣言。點我方未橫置單位指向同戰線敵方非盾牌進行宣告，戰鬥會在對手回合防守結算。";
+Line 2408: // 渲染進攻戰線高亮
+Line 2932: logBattle(`對手發起宣告進攻：星星戰線${attIdx + 1}，對手 ${unitName(attacker)} 指向我方 ${unitName(defender)}`);
+Line 2934: logBattle(`對手發起空欄位宣告進攻：星星戰線${attIdx + 1}，對手 ${unitName(attacker)}`);
+Line 2946: logBattle(`對手取消宣告進攻：星星戰線${attIdx + 1}`);
+Line 3725: logBattle("⚠️ 偵測到有玩家牌組已空！進入生死倒數階段！中央星星戰線卡5已反灰。");
+Line 3731: logBattle("⚠️ 星星戰線卡1已反灰！倒數結束，遊戲結束！");
+Line 3735: logBattle(`⚠️ 倒數階段：星星戰線卡${countdownRemaining + 1}已反灰！剩餘 ${countdownRemaining} 回合。`);
+
+=== SEARCH FOR: 已灰 ===
+Line 2416: cell.textContent = `★${i + 1} (已灰)`;
+
+=== SEARCH FOR: 分數 ===
+Line 550: // 單位星數分數 (加入加成)
+Line 2485: <span>場上星星: ${playerFieldStars} ★ | 額外分數: ${playerBonusScore} ★</span>
+Line 2493: <span>場上星星: ${enemyFieldStars} ★ | 額外分數: ${enemyBonusScore} ★</span>
+Line 2502: playerVal.innerHTML = `${playerStars} <span style="font-size: 13px; font-weight: normal; opacity: 0.8; margin-left: 6px;">(場上星星: ${playerFieldStars} ★ | 額外分數: ${playerBonusScore} ★
+Line 2505: enemyVal.innerHTML = `${enemyStars} <span style="font-size: 13px; font-weight: normal; opacity: 0.8; margin-left: 6px;">(場上星星: ${enemyFieldStars} ★ | 額外分數: ${enemyBonusScore} ★)</s
+Line 2534: 我方 ${playerStars} ★ <small style="display: block; font-size: 12px; opacity: 0.85;">(場上星星: ${playerFieldStars} ★ | 額外分數: ${playerBonusScore} ★)</small>
+Line 2535: 對手 ${enemyStars} ★ <small style="display: block; font-size: 12px; opacity: 0.85;">(場上星星: ${enemyFieldStars} ★ | 額外分數: ${enemyBonusScore} ★)</small>
+Line 3245: // 打手喵 (CAT_0050) —— 額外分數
+
+=== SEARCH FOR: 總分 ===
+Line 2480: <span class="score-badge-label">我方總分</span>
+Line 2488: <span class="score-badge-label">對手總分</span>
+
+=== SEARCH FOR: R-CAT-00 ===
+Line 922: return u && u.card && (u.card.id === "CAT_005" || u.card.id === "R-CAT-0041" || u.card.name.includes("公關姐姐喵"));
+Line 3115: // 黑喵 (CAT_0011 / R-CAT-0011 / CAT_012)：破壞敵方最強單位
+Line 3116: if (card.id === "CAT_0011" || card.id === "R-CAT-0011" || card.id === "CAT_012" || card.name.includes("黑喵")) {
+Line 3162: // 殭屍喵 (CAT_003 / R-CAT-0044) —— 墓地召回連動
+Line 3163: if (card.id === "CAT_003" || card.id === "R-CAT-0044" || card.name.includes("殭屍喵")) {
+Line 3272: // 黑幫首喵 凱特琳 (CAT_0052 / R-CAT-0052) —— 連擊加分
+Line 3277: if (u && (u.card?.id === "CAT_0052" || u.card?.id === "R-CAT-0052" || u.card?.name.includes("凱特琳"))) {
+Line 3285: if (card.id === "CAT_0052" || card.id === "R-CAT-0052" || card.name.includes("凱特琳") || hasCaitlynOnField) {
+Line 3298: cid === "CAT-0032" || cid === "SR-CAT-0032" || c.name.includes("次元突擊喵") ||
+Line 3304: if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("凱特琳")) && window.XLW_turnSneakCount >= 2) {
+
+=== SEARCH FOR: CAT_ ===
+Line 257: return c.faction === "喵喵賊" || c.race === "喵喵賊" || String(c.id).startsWith("CAT_") || String(c.id).startsWith("CAT-");
+Line 922: return u && u.card && (u.card.id === "CAT_005" || u.card.id === "R-CAT-0041" || u.card.name.includes("公關姐姐喵"));
+Line 3115: // 黑喵 (CAT_0011 / R-CAT-0011 / CAT_012)：破壞敵方最強單位
+Line 3116: if (card.id === "CAT_0011" || card.id === "R-CAT-0011" || card.id === "CAT_012" || card.name.includes("黑喵")) {
+Line 3144: // 變裝喵 (CAT_012) —— 強制隨機捨牌
+Line 3145: if (card.id === "CAT_012" || card.name.includes("變裝喵")) {
+Line 3162: // 殭屍喵 (CAT_003 / R-CAT-0044) —— 墓地召回連動
+Line 3163: if (card.id === "CAT_003" || card.id === "R-CAT-0044" || card.name.includes("殭屍喵")) {
+Line 3196: // 醫療喵 (CAT_0023) —— 墓地復活連動
+Line 3197: if (card.id === "CAT_0023" || card.name.includes("醫療喵")) {
+Line 3245: // 打手喵 (CAT_0050) —— 額外分數
+Line 3246: if (card.id === "CAT_0050" || card.name.includes("打手喵")) {
+Line 3252: // 炸彈喵 (CAT_009) —— 墓地除外至多2張喵喵賊卡
+Line 3253: if (card.id === "CAT_009" || card.name.includes("炸彈喵")) {
+Line 3272: // 黑幫首喵 凱特琳 (CAT_0052 / R-CAT-0052) —— 連擊加分
+Line 3277: if (u && (u.card?.id === "CAT_0052" || u.card?.id === "R-CAT-0052" || u.card?.name.includes("凱特琳"))) {
+Line 3285: if (card.id === "CAT_0052" || card.id === "R-CAT-0052" || card.name.includes("凱特琳") || hasCaitlynOnField) {
+Line 3296: if (cid === "CAT-0003" || cid === "CAT_015" || c.name.includes("驚喜喵") ||
+Line 3297: cid === "CAT-0008" || cid === "CAT_013" || c.name.includes("老喵") ||
+Line 3299: cid === "CAT_0050" || c.name.includes("打手喵") ||
+Line 3300: cid === "CAT_005" || c.name.includes("綠喵")) {
+Line 3304: if ((cid === "CAT_0052" || cid === "R-CAT-0052" || c.name.includes("凱特琳")) && window.XLW_turnSneakCount >= 2) {
+
+=== SEARCH FOR: triggerSneakAttackSuccessEffects ===
+Line 1616: await triggerSneakAttackSuccessEffects(attacker.card);
+Line 3106: async function triggerSneakAttackSuccessEffects(card) {
+

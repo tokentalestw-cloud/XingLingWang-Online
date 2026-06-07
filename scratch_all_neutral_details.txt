@@ -1,0 +1,109 @@
+ID: NEU-0001 | Name: 中立石魔人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0001.jpeg
+ID: NEU-0002 | Name: 黃金鬥士金牛座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0002.jpeg
+ID: NEU-0003 | Name: 奪星射手 射手座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0003.jpeg
+ID: NEU-0004 | Name: 石巨人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0004.jpeg
+ID: NEU-0005 | Name: 魔法炸彈客 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0005.jpeg
+ID: NEU-0011 | Name: 彩虹維修員 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0011.jpeg
+ID: NEU-0012 | Name: 彈弓小童 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0012.jpeg
+ID: NEU-0013 | Name: 笨手笨腳的維修員 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0013.jpeg
+ID: NEU-0014 | Name: 莉茲 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0014.jpeg
+ID: NEU-0015 | Name: 劇毒蜘蛛 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0015.jpeg
+ID: NEU-0016 | Name: 野人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0016.jpeg
+ID: NEU-0017 | Name: 觀光阿姨 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0017.jpeg
+ID: NEU-0018 | Name: 石巨人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0018.jpeg
+ID: NEU-0019 | Name: 闇鐘人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0019.jpeg
+ID: NEU-0021 | Name: 地下執法者 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0021.jpeg
+ID: NEU-0022 | Name: 封印騎士 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0022.jpeg
+ID: NEU-0023 | Name: 人口安全局局員 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0023.jpeg
+ID: NEU-0024 | Name: 破甲小兵 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0024.jpeg
+ID: NEU-0025 | Name: 魔法炸彈客 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0025.jpeg
+ID: NEU-0026 | Name: 細胞旅人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0026.jpeg
+ID: NEU-0027 | Name: 星靈女孩 星娜 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0027.jpeg
+ID: NEU-0028 | Name: 山羊勇者魔羯座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0028.jpeg
+ID: NEU-0029 | Name: 瘋狂粉絲 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0029.jpeg
+ID: NEU-0030 | Name: 馴羊使者 牡羊座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0030.jpeg
+ID: NEU-0031 | Name: 小女魔導士 庫路路 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0031.jpeg
+ID: NEU-0032 | Name: 居酒屋老闆娘 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0032.jpeg
+ID: NEU-0033 | Name: 魔王女參謀 克蕾 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0033.jpeg
+ID: NEU-0034 | Name: 海中的干貝 火野貝 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0034.jpeg
+ID: NEU-0035 | Name: 尖叫的女人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0035.jpeg
+ID: NEU-0036 | Name: 驅魔人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0036.jpeg
+ID: NEU-0037 | Name: 廢墟探險家 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0037.jpeg
+ID: NEU-0038 | Name: 恐怖的房東阿姨 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0038.jpeg
+ID: NEU-0039 | Name: 恐怖稻草人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0039.jpeg
+ID: NEU-0042 | Name: 驚嚇蘑菇庫路路 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0042.jpeg
+ID: NEU-0043 | Name: 封印小兵 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0043.jpeg
+ID: NEU-0045 | Name: 好奇女巫 水瓶座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0045.jpeg
+ID: NEU-0047 | Name: 皇家魔法師 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0047.jpeg
+ID: NEU-0048 | Name: 路過的勇士 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0048.jpeg
+ID: NEU-0071 | Name: 迷路的尋寶小旅人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0071.jpeg
+ID: NEU-0073 | Name: 流浪巨人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/neu_0073.jpeg
+ID: NMG-0010 | Name: 前線號角 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0010.jpeg
+ID: NMG-0012 | Name: 山羊術 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0012.jpeg
+ID: NMG-0019 | Name: 法術保護 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0019.jpeg
+ID: NMG-0020 | Name: 魔法反制 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0020.jpeg
+ID: NMG-0039 | Name: 法術解析 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0039.jpeg
+ID: NMG-0040 | Name: 力場保護 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nmg_0040.jpeg
+ID: NMS-0011 | Name: 彩虹維修員 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nms_0011.jpeg
+ID: NMS-0015 | Name: 劇毒蜘蛛 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nms_0015.jpeg
+ID: NMS-0019 | Name: 鬧鐘人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nms_0019.jpeg
+ID: NMS-0020 | Name: 壞掉的機器人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nms_0020.jpeg
+ID: NMS-0070 | Name: 恐怖的房東阿伯 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/nms_0070.jpeg
+ID: R-NEU-0043 | Name: 封印小兵 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_neu_0043.jpeg
+ID: R-NMG-0004 | Name: 塗毒 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0004.jpeg
+ID: R-NMG-0005 | Name: 肌肉魔法 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0005.jpeg
+ID: R-NMG-0006 | Name: 以小博大 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0006.jpeg
+ID: R-NMG-0009 | Name: 和平巨人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0009.jpeg
+ID: R-NMG-0013 | Name: 盾牌人偶 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0013.jpeg
+ID: R-NMG-0015 | Name: 小雷擊 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0015.jpeg
+ID: R-NMG-0016 | Name: 復活術 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0016.jpeg
+ID: R-NMG-0020 | Name: 魔法反制 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0020.jpeg
+ID: R-NMG-0021 | Name: 天氣晴 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0021.jpeg
+ID: R-NMG-0022 | Name: 打斷你一下 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0022.jpeg
+ID: R-NMG-0023 | Name: 法力回收壺 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0023.jpeg
+ID: R-NMG-0024 | Name: 復原魔法 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0024.jpeg
+ID: R-NMG-0028 | Name: 我要打5個 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0028.jpeg
+ID: R-NMG-0031 | Name: 魔抗鐵拳 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0031.jpeg
+ID: R-NMG-0032 | Name: 復活膠囊 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0032.jpeg
+ID: R-NMG-0038 | Name: 一根香蕉 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0038.jpeg
+ID: R-NMG-0040 | Name: 力場保護 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nmg_0040.jpeg
+ID: R-NMS-0017 | Name: 觀光阿姨 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0017.jpeg
+ID: R-NMS-0021 | Name: 地下執法者 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0021.jpeg
+ID: R-NMS-0022 | Name: 封印騎士 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0022.jpeg
+ID: R-NMS-0023 | Name: 法力回收壺 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0023.jpeg
+ID: R-NMS-0024 | Name: 破甲小兵 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0024.jpeg
+ID: R-NMS-0025 | Name: 魔法炸彈客 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0025.jpeg
+ID: R-NMS-0029 | Name: 瘋狂粉絲 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0029.jpeg
+ID: R-NMS-0031 | Name: 魔抗鐵拳 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0031.jpeg
+ID: R-NMS-0036 | Name: 驅魔人 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0036.jpeg
+ID: R-NMS-0037 | Name: 廢墟探險家 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0037.jpeg
+ID: R-NMS-0044 | Name: 退休的破甲老兵 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0044.jpeg
+ID: R-NMS-0048 | Name: 路過的勇士 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_nms_0048.jpeg
+ID: R-VLG-0001 | Name: 地震術 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_vlg_0001.jpeg
+ID: R-VLG-0021 | Name: 天氣晴 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/r_vlg_0021.jpeg
+ID: SR-NMG-0026 | Name: 終極無效化 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sr_nmg_0026.jpeg
+ID: SR-NMS-0026 | Name: 終極無效化 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sr_nms_0026.jpeg
+ID: SSR-NMG-0010 | Name: 前線號角 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nmg_0010.jpeg
+ID: SSR-NMG-0012 | Name: 山羊術 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nmg_0012.jpeg
+ID: SSR-NMG-0017 | Name: 大雷擊 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nmg_0017.jpeg
+ID: SSR-NMG-0019 | Name: 法術保護 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nmg_0019.jpeg
+ID: SSR-NMS-0014 | Name: 莉茲 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nms_0014.jpeg
+ID: SSR-NMS-0017 | Name: 觀光阿姨 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_nms_0017.jpeg
+ID: SSR-VLG-0021 | Name: 地下執法者 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/ssr_vlg_0021.jpeg
+ID: SSSR-NMG-0008 | Name: 起來重打 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nmg_0008.jpeg
+ID: SSSR-NMG-0021 | Name: 天氣晴 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nmg_0021.jpeg
+ID: SSSR-NMG-0022 | Name: 打斷你一下 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nmg_0022.jpeg
+ID: SSSR-NMS-000 | Name: 馴羊使者 牧羊座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nms_000.jpeg
+ID: SSSR-NMS-0011 | Name: 招魂 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nms_0011.jpeg
+ID: SSSR-NMS-0032 | Name: 居酒屋老闆娘 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nms_0032.jpeg
+ID: SSSR-NMS-0041 | Name: 弒神刺客 天蠍座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nms_0041.jpeg
+ID: SSSR-NMS-0051 | Name: 熊頭幫老大 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_nms_0051.jpeg
+ID: SSSR-R-NMS-0029 | Name: 瘋狂粉絲 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_r_nms_0029.jpeg
+ID: SSSR-VLG-0003 | Name: 削弱藥水 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0003.jpeg
+ID: SSSR-VLG-0037 | Name: 廢墟探險家 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0037.jpeg
+ID: SSSR-VLG-0038 | Name: 恐怖的房東阿姨 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0038.jpeg
+ID: SSSR-VLG-0052 | Name: 潔白女神 處女座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0052.jpeg
+ID: SSSR-VLG-0067 | Name: 盾甲騎士 巨蟹座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0067.jpeg
+ID: SSSR-VLG-0068 | Name: 星靈判官 天秤座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0068.jpeg
+ID: SSSR-VLG-0069 | Name: 禁忌女巫 蛇夫座 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/sssr_vlg_0069.jpeg
+ID: XLW-S0003 | Name: CPU過載 | Faction: 中立 | Race: 中立 | Deck: 中立 | Image: /static/card_images/xlw_s0003.jpeg

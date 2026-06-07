@@ -1,0 +1,60 @@
+1116:       tapped: false,
+1117:       attacking: false,
+1118:       target: null,
+1119:       summonedTurn: turn,
+1120:       summonedZone: zone
+1121:     };
+1122:     if (phase === "召喚階段") normalSummonUsed = true;
+1123:     if (phase === "戰術佈陣") tacticalSummonUsed = true;
+1124:     logBattle(`從森林召喚小旅人到 ${zone.includes("front") ? "前排" : "後排"}${idx + 1}`);
+1125:     playTravelerSummonAnimation("#playerForest", zone, idx);
+1126:   } else {
+1127:     // 召喚手牌
+1128:     const isTributeSummon = (tributeWaitingPosition && selectedTributeCard !== null);
+1129:     let handIndex = Number(selectedHandForSummon);
+1130:     
+1131:     let card = null;
+1132:     if (selectedHandForSummon === "GRAVEYARD_UMBRELLA" || selectedHandForSummon === "GRAVEYARD_WELL") {
+1133:       card = window.XLW_tempGraveCard;
+1134:     } else {
+1135:       if (handIndex < 0 || handIndex >= hand.length || !hand[handIndex]) {
+1136:         if (tributeWaitingPosition) {
+1137:           const foundIdx = hand.findIndex(c => c && Number(c.tribute || 0) > 0);
+1138:           if (foundIdx >= 0) {
+1139:             handIndex = foundIdx;
+1140:           }
+1141:         }
+1142:       }
+1143:       if (handIndex >= 0 && hand[handIndex]) {
+1144:         card = hand[handIndex];
+1145:       }
+1146:     }
+1147: 
+1148:     if (!card) {
+1149:       setStatus("找不到手牌中的卡牌，請點選重新召喚。");
+1150:       clearModes();
+1151:       render();
+1152:       return;
+1153:     }
+1154: 
+1155:     field[zone][idx] = {
+1156:       card: structuredClone(card),
+1157:       tapped: false,
+1158:       attacking: false,
+1159:       target: null,
+1160:       summonedTurn: turn,
+1161:       summonedZone: zone
+1162:     };
+1163: 
+1164:     if (selectedHandForSummon === "GRAVEYARD_UMBRELLA" || selectedHandForSummon === "GRAVEYARD_WELL") {
+1165:       window.XLW_tempGraveCard = null;
+1166:       window.XLW_bypassNormalSummonLimit = false;
+1167:       logBattle(`特殊召喚墓地單位 ${card.name} 到 ${zone.includes("front") ? "前排" : "後排"}${idx + 1}`);
+1168:     } else {
+1169:       hand.splice(handIndex, 1);
+1170:       if (window.XLW_bypassNormalSummonLimit) {
+1171:         window.XLW_bypassNormalSummonLimit = false;
+1172:         logDebug(`【連動額外召喚】成功！不佔用本回合常規召喚額度。`);
+1173:         
+1174:         const isPlayer = zone.startsWith("player_");
+1175:         const checkZonePrefix = isPlayer ? "player_" : "enemy_";

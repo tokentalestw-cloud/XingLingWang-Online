@@ -1,0 +1,14 @@
+{
+  "source": "星靈王.zip",
+  "required_files": {
+    "app.py": true,
+    "requirements.txt": true,
+    "static": true,
+    "data": true,
+    "Procfile": true,
+    "render.yaml": true,
+    ".gitignore": true,
+    "README.md": true
+  },
+  "file_count": 869
+}

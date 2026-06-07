@@ -1,0 +1,1 @@
+"python -c \"content=open(r'static/game_v8.js', 'r', encoding='utf-8').read(); print('trigger:', content.count('async function triggerSneakAttackSuccessEffects')); print('confirm:', content.count('function showXLWConfirm'))\""
